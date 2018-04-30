@@ -1,0 +1,32 @@
+body {
+display:grid;
+font-sie: 15em;
+min-height: 300px
+width: 100%;
+grid-template-columns: auto;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+grid-template-areas:
+"hd"
+"md"
+"ft";
+}
+header {
+  grid-area: hd;
+  background-color: #6BCBFF;
+  font-family: 'Gentium Basic', serif;
+  font-sie: 12em;
+  min-height: 50px;
+}
+middle {
+  grid-area: md;
+  background-color: #FFFFFF;
+  font-sie: 12em;
+  min-height: 50px;
+
+}
+footer {
+  grid-area: ft;
+  background-color: #6BCBFF;
+  min-height: 50px;
+}
