@@ -13,9 +13,13 @@ grid-template-areas:
 }
 header {
   grid-area: hd;
+  display:flex;
+
+  justify-content:center; /* aligns items on the main axis(horizontal)*/
+  flex-direction:column; /* flex as a column which makes the align-content center it vertical instead of horizonal */
   background-color: #6BCBFF;
   font-family: 'Gentium Basic', serif;
-  font-sie: 12em;
+  font-size: 2em;
   min-height: 50px;
 }
 middle {
