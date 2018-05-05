@@ -3,18 +3,22 @@ display:grid;
 font-sie: 15em;
 min-height: 300px
 width: 100%;
-grid-template-columns: auto;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr
+grid-template-rows: 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
 grid-template-areas:
-"hd"
-"md"
-"ft";
+'hd'
+'tmd'
+'bmd'
+'ft';
+}
+img {
+width: 100%;
+height: auto;
 }
 header {
   grid-area: hd;
-  display:flex;
-
+  display:flex; /*This is added so I can center my title*/
   justify-content:center; /* aligns items on the main axis(horizontal)*/
   flex-direction:column; /* flex as a column which makes the align-content center it vertical instead of horizonal */
   background-color: #6BCBFF;
@@ -22,12 +26,17 @@ header {
   font-size: 2em;
   min-height: 50px;
 }
-middle {
-  grid-area: md;
-  background-color: #FFFFFF;
-  font-sie: 12em;
+tmiddle {
+  grid-area: tmd;
+  background-color: #411765;
+  font-size: 1em;
   min-height: 50px;
-
+}
+bmiddle {
+  grid-area: bmd;
+  background-color: #176517;
+  font-size: 1em;
+  min-height: 50px;
 }
 footer {
   grid-area: ft;
