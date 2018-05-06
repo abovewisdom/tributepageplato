@@ -1,20 +1,37 @@
 body {
 display:grid;
-font-sie: 15em;
+font-size: 1em;
+font-family: 'Open Sans', sans-serif;
 min-height: 300px
 width: 100%;
-grid-template-columns: 1fr
-grid-template-rows: 1fr 1fr 1fr 1fr;
-grid-gap: 10px;
+grid-template-columns: 1fr;
+grid-template-rows: minmax(50px, 100px) minmax(300px, 500px) minmax(25px, 50px) minmax(100px, 100%) minmax(50px, 50px);
+grid-gap: 5px;
 grid-template-areas:
 'hd'
 'tmd'
+'cpt'
 'bmd'
 'ft';
 }
+#title-text{
+  padding: 10px;
+}
+#tribute-info{
+  padding: 10px;
+}
+#img-caption{
+  padding: 10px;
+}
 img {
-width: 100%;
-height: auto;
+ height: 100%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.img-caption {
+ grid-area: cpt;
+ text-align: center;
 }
 header {
   grid-area: hd;
@@ -24,22 +41,17 @@ header {
   background-color: #6BCBFF;
   font-family: 'Gentium Basic', serif;
   font-size: 2em;
-  min-height: 50px;
 }
 tmiddle {
   grid-area: tmd;
-  background-color: #411765;
-  font-size: 1em;
-  min-height: 50px;
+  /* background-color: #411765; */
 }
 bmiddle {
   grid-area: bmd;
-  background-color: #176517;
-  font-size: 1em;
-  min-height: 50px;
+  /* background-color: #176517; */
 }
 footer {
   grid-area: ft;
   background-color: #6BCBFF;
-  min-height: 50px;
+  font-size: .75em;
 }
