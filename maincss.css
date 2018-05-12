@@ -3,9 +3,6 @@ display:grid;
 width: 100%;
 font-size: 1em;
 font-family: 'Open Sans', sans-serif;
-/* min-height: 300px */
-/* width: 100%; */
-/* grid-template-columns: 1fr; */
 grid-template-rows: minmax(50px, 100px) minmax(300px, 500px) minmax(25px, 50px) minmax(100px, 100%) minmax(50px, 50px);
 grid-gap: 5px;
 grid-template-areas:
