@@ -64,18 +64,17 @@ footer {
   background-color: #6BCBFF;
   font-size: .75em;
 }
-<!-- For large screens-->
+/*For large screens*/
 @media only screen and (min-width: 500px) {
-  .allin{
-    display:flex;
-    justify-content:center;
-  }
+  /* .allin{
+    display:grid;
+    margin:auto;
+  } */
   body {
   display:grid;
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   grid-template-columns: 500px;
-  justify-items: center;
   grid-gap: 5px;
   grid-template-areas:
   'hd'
