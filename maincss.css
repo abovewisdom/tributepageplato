@@ -1,9 +1,10 @@
-body {
+main {
 display:grid;
 font-size: 1em;
 font-family: 'Open Sans', sans-serif;
 /* grid-template-rows: minmax(50px, 100px) minmax(250px, 500px) minmax(25px, 50px) minmax(100px, 100%) minmax(50px, 50px); */
-grid-template-columns: 100%;
+grid-template-columns: auto;
+justify-items: center;
 grid-gap: 5px;
 grid-template-areas:
 'hd'
@@ -48,16 +49,16 @@ header {
 }
 tmiddle {
   grid-area: tmd;
-  text-align: center;
+  margin: auto;
   overflow: auto;
-  /* max-width: 300px; */
-  /* background-color: #411765; */
+  max-width: 300px;
+  background-color: #411765;
 }
 bmiddle {
   grid-area: bmd;
   justify-self: center;
-  /* background-color: #176517; */
-  /* max-width: 800px; */
+  background-color: #176517;
+  max-width: 800px;
 }
 footer {
   grid-area: ft;
@@ -65,73 +66,7 @@ footer {
   font-size: .75em;
 }
 /*For large screens*/
-@media only screen and (min-width: 500px) {
-  /* .allin{
-    display:grid;
-    margin:auto;
-  } */
+/* @media only screen and (min-width: 500px) {
   body {
-  display:grid;
-  font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
   grid-template-columns: 500px;
-  grid-gap: 5px;
-  grid-template-areas:
-  'hd'
-  'tmd'
-  'cpt'
-  'bmd'
-  'ft';
-  }
-  #title-text{
-    padding: 10px;
-    text-align: center;
-  }
-  #tribute-info{
-    padding: 10px;
-  }
-  #img-caption{
-    padding: 10px;
-  }
-  #footer-text{
-    padding: 10px;
-  }
-  img {
-   /* height: 100%; adding this plus making margin-left and margin-right 'auto' keeps the image ratio.*/
-   /* width: 100%; */
-   max-width: 100%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-  }
-  img-caption {
-   grid-area: cpt;
-   display:flex;
-  }
-  header {
-    grid-area: hd;
-    display:flex; /*This is added so I can center my title*/
-    justify-content:center; /* aligns items on the main axis(horizontal)*/
-    flex-direction:column; /* flex as a column which makes the align-content center it vertical instead of horizonal */
-    background-color: #6BCBFF;
-    font-family: 'Gentium Basic', serif;
-    font-size: 2em;
-  }
-  tmiddle {
-    grid-area: tmd;
-    text-align: center;
-    overflow: auto;
-    /* max-width: 300px; */
-    /* background-color: #411765; */
-  }
-  bmiddle {
-    grid-area: bmd;
-    justify-self: center;
-    /* background-color: #176517; */
-    /* max-width: 800px; */
-  }
-  footer {
-    grid-area: ft;
-    background-color: #6BCBFF;
-    font-size: .75em;
-}
+} */
