@@ -1,17 +1,11 @@
 main {
-display:grid;
-font-size: 1em;
-font-family: 'Open Sans', sans-serif;
-/* grid-template-rows: minmax(50px, 100px) minmax(250px, 500px) minmax(25px, 50px) minmax(100px, 100%) minmax(50px, 50px); */
-grid-template-columns: auto;
-justify-items: center;
-grid-gap: 5px;
-grid-template-areas:
-'hd'
-'tmd'
-'cpt'
-'bmd'
-'ft';
+  display:grid;
+  align-content: start;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  grid-gap: 5px;
 }
 #title-text{
   padding: 10px;
@@ -21,47 +15,41 @@ grid-template-areas:
   padding: 10px;
 }
 #img-caption{
-  padding: 10px;
+  max-width: 300px;
 }
 #footer-text{
   padding: 10px;
 }
-img {
- /* height: 100%; adding this plus making margin-left and margin-right 'auto' keeps the image ratio.*/
- /* width: 100%; */
- max-width: 100%;
- display: block;
- margin-left: auto;
- margin-right: auto;
+#image {
+  max-width: 100%;
+}
+#img-div {
+  max-width: 300px;
+}
+h1{
+  font-size: 1.5em;
+  padding-left: 5px;
 }
 img-caption {
- grid-area: cpt;
- display:flex;
+
 }
 header {
-  grid-area: hd;
   display:flex; /*This is added so I can center my title*/
   justify-content:center; /* aligns items on the main axis(horizontal)*/
   flex-direction:column; /* flex as a column which makes the align-content center it vertical instead of horizonal */
+  max-height: 100px;
   background-color: #6BCBFF;
   font-family: 'Gentium Basic', serif;
   font-size: 2em;
 }
 tmiddle {
-  grid-area: tmd;
+  /* background-color: red; */
   margin: auto;
-  overflow: auto;
-  max-width: 300px;
-  background-color: #411765;
 }
 bmiddle {
-  grid-area: bmd;
-  justify-self: center;
-  background-color: #176517;
-  max-width: 800px;
+  /* background-color: lightgreen; */
 }
 footer {
-  grid-area: ft;
   background-color: #6BCBFF;
   font-size: .75em;
 }
