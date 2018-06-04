@@ -43,11 +43,10 @@ header {
   font-size: 2em;
 }
 tmiddle {
-  /* background-color: red; */
   margin: auto;
 }
 bmiddle {
-  /* background-color: lightgreen; */
+  
 }
 footer {
   background-color: #6BCBFF;
