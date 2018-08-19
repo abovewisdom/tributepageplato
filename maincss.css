@@ -30,9 +30,6 @@ h1{
   font-size: 1.5em;
   padding-left: 5px;
 }
-img-caption {
-
-}
 header {
   display:flex; /*This is added so I can center my title*/
   justify-content:center; /* aligns items on the main axis(horizontal)*/
@@ -46,7 +43,7 @@ tmiddle {
   margin: auto;
 }
 bmiddle {
-  
+ margin:auto;
 }
 footer {
   background-color: #6BCBFF;
